@@ -1,0 +1,364 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88 
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER
+]=]
+
+-- Instances: 29 | Scripts: 6 | Modules: 0
+local G2L = {};
+
+-- StarterGui.KroxExecutor
+G2L["1"] = Instance.new("ScreenGui", gethui());
+G2L["1"]["Name"] = [[KroxExecutor]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+-- StarterGui.KroxExecutor.Main
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2"]["Size"] = UDim2.new(0, 591, 0, 350);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Position"] = UDim2.new(0.1208384707570076, 0, 0.17635270953178406, 0);
+G2L["2"]["Name"] = [[Main]];
+
+-- StarterGui.KroxExecutor.Main.Buttons
+G2L["3"] = Instance.new("Frame", G2L["2"]);
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(39, 39, 39);
+G2L["3"]["Size"] = UDim2.new(0, 105, 0, 350);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Name"] = [[Buttons]];
+
+-- StarterGui.KroxExecutor.Main.Buttons.ExecutorButton
+G2L["4"] = Instance.new("ImageButton", G2L["3"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["Image"] = [[rbxassetid://10406238840]];
+G2L["4"]["Size"] = UDim2.new(0, 44, 0, 145);
+G2L["4"]["Name"] = [[ExecutorButton]];
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Position"] = UDim2.new(0.2857142984867096, 0, 0.1428571492433548, 0);
+G2L["4"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.KroxExecutor.Main.Buttons.ExecutorButton.UIAspectRatioConstraint
+G2L["5"] = Instance.new("UIAspectRatioConstraint", G2L["4"]);
+
+
+-- StarterGui.KroxExecutor.Main.Buttons.ExecutorButton.LocalScript
+G2L["6"] = Instance.new("LocalScript", G2L["4"]);
+
+
+-- StarterGui.KroxExecutor.Main.Buttons.CreditsFrame
+G2L["7"] = Instance.new("ImageButton", G2L["3"]);
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["Image"] = [[rbxassetid://77724465]];
+G2L["7"]["Size"] = UDim2.new(0, 44, 0, 145);
+G2L["7"]["Name"] = [[CreditsFrame]];
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Position"] = UDim2.new(0.2857142984867096, 0, 0.3371428847312927, 0);
+G2L["7"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.KroxExecutor.Main.Buttons.CreditsFrame.UIAspectRatioConstraint
+G2L["8"] = Instance.new("UIAspectRatioConstraint", G2L["7"]);
+
+
+-- StarterGui.KroxExecutor.Main.Buttons.CreditsFrame.LocalScript
+G2L["9"] = Instance.new("LocalScript", G2L["7"]);
+
+
+-- StarterGui.KroxExecutor.Main.ExecutorFrame
+G2L["a"] = Instance.new("Frame", G2L["2"]);
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
+G2L["a"]["Size"] = UDim2.new(0, 486, 0, 350);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Position"] = UDim2.new(0.17766498029232025, 0, 0, 0);
+G2L["a"]["Visible"] = false;
+G2L["a"]["Name"] = [[ExecutorFrame]];
+
+-- StarterGui.KroxExecutor.Main.ExecutorFrame.ExecuteFromTextbox
+G2L["b"] = Instance.new("TextButton", G2L["a"]);
+G2L["b"]["TextWrapped"] = true;
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["TextScaled"] = true;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["TextSize"] = 14;
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["Size"] = UDim2.new(0, 129, 0, 46);
+G2L["b"]["Name"] = [[ExecuteFromTextbox]];
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Text"] = [[Execute From Textbox]];
+G2L["b"]["Position"] = UDim2.new(0.041152264922857285, 0, 0.8342857360839844, 0);
+
+-- StarterGui.KroxExecutor.Main.ExecutorFrame.ExecuteFromTextbox.UICorner
+G2L["c"] = Instance.new("UICorner", G2L["b"]);
+
+
+-- StarterGui.KroxExecutor.Main.ExecutorFrame.ExecuteFromTextbox.UIStroke
+G2L["d"] = Instance.new("UIStroke", G2L["b"]);
+G2L["d"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["Thickness"] = 2;
+G2L["d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterGui.KroxExecutor.Main.ExecutorFrame.ExecuteFromTextbox.LocalScript
+G2L["e"] = Instance.new("LocalScript", G2L["b"]);
+
+
+-- StarterGui.KroxExecutor.Main.ExecutorFrame.ExecuteFromClipboard
+G2L["f"] = Instance.new("TextButton", G2L["a"]);
+G2L["f"]["TextWrapped"] = true;
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["TextScaled"] = true;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["TextSize"] = 14;
+G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["Size"] = UDim2.new(0, 129, 0, 46);
+G2L["f"]["Name"] = [[ExecuteFromClipboard]];
+G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["Text"] = [[Execute From Clipboard]];
+G2L["f"]["Position"] = UDim2.new(0.3477366268634796, 0, 0.8342857360839844, 0);
+
+-- StarterGui.KroxExecutor.Main.ExecutorFrame.ExecuteFromClipboard.UICorner
+G2L["10"] = Instance.new("UICorner", G2L["f"]);
+
+
+-- StarterGui.KroxExecutor.Main.ExecutorFrame.ExecuteFromClipboard.UIStroke
+G2L["11"] = Instance.new("UIStroke", G2L["f"]);
+G2L["11"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["Thickness"] = 2;
+G2L["11"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterGui.KroxExecutor.Main.ExecutorFrame.ExecuteFromClipboard.LocalScript
+G2L["12"] = Instance.new("LocalScript", G2L["f"]);
+
+
+-- StarterGui.KroxExecutor.Main.ExecutorFrame.Clear
+G2L["13"] = Instance.new("TextButton", G2L["a"]);
+G2L["13"]["TextWrapped"] = true;
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["TextScaled"] = true;
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["TextSize"] = 14;
+G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["Size"] = UDim2.new(0, 129, 0, 46);
+G2L["13"]["Name"] = [[Clear]];
+G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["Text"] = [[Clear]];
+G2L["13"]["Position"] = UDim2.new(0.6584362387657166, 0, 0.8342857360839844, 0);
+
+-- StarterGui.KroxExecutor.Main.ExecutorFrame.Clear.UICorner
+G2L["14"] = Instance.new("UICorner", G2L["13"]);
+
+
+-- StarterGui.KroxExecutor.Main.ExecutorFrame.Clear.UIStroke
+G2L["15"] = Instance.new("UIStroke", G2L["13"]);
+G2L["15"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["Thickness"] = 2;
+G2L["15"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterGui.KroxExecutor.Main.ExecutorFrame.Clear.LocalScript
+G2L["16"] = Instance.new("LocalScript", G2L["13"]);
+
+
+-- StarterGui.KroxExecutor.Main.ExecutorFrame.Input
+G2L["17"] = Instance.new("TextBox", G2L["a"]);
+G2L["17"]["CursorPosition"] = -1;
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["TextSize"] = 14;
+G2L["17"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["17"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["17"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["17"]["MultiLine"] = true;
+G2L["17"]["Size"] = UDim2.new(0, 431, 0, 232);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Text"] = [[]];
+G2L["17"]["Position"] = UDim2.new(0.05761316791176796, 0, 0.09428571164608002, 0);
+G2L["17"]["Name"] = [[Input]];
+G2L["17"]["ClearTextOnFocus"] = false;
+
+-- StarterGui.KroxExecutor.Main.LocalScript
+G2L["18"] = Instance.new("LocalScript", G2L["2"]);
+
+
+-- StarterGui.KroxExecutor.Main.CreditsFrame
+G2L["19"] = Instance.new("Frame", G2L["2"]);
+G2L["19"]["BorderSizePixel"] = 0;
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
+G2L["19"]["Size"] = UDim2.new(0, 486, 0, 350);
+G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["Position"] = UDim2.new(0.17766498029232025, 0, 0, 0);
+G2L["19"]["Name"] = [[CreditsFrame]];
+
+-- StarterGui.KroxExecutor.Main.CreditsFrame.creditslabel
+G2L["1a"] = Instance.new("TextLabel", G2L["19"]);
+G2L["1a"]["TextWrapped"] = true;
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["TextScaled"] = true;
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a"]["TextSize"] = 14;
+G2L["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["Size"] = UDim2.new(0, 200, 0, 64);
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["Text"] = [[- CREDITS -]];
+G2L["1a"]["Name"] = [[creditslabel]];
+G2L["1a"]["BackgroundTransparency"] = 1;
+G2L["1a"]["Position"] = UDim2.new(0.26954734325408936, 0, 0.06000000238418579, 0);
+
+-- StarterGui.KroxExecutor.Main.CreditsFrame.GuiCreatorlabel
+G2L["1b"] = Instance.new("TextLabel", G2L["19"]);
+G2L["1b"]["TextWrapped"] = true;
+G2L["1b"]["BorderSizePixel"] = 0;
+G2L["1b"]["TextScaled"] = true;
+G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b"]["TextSize"] = 14;
+G2L["1b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b"]["Size"] = UDim2.new(0, 200, 0, 29);
+G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["Text"] = [[Gui Creator: Noremius]];
+G2L["1b"]["Name"] = [[GuiCreatorlabel]];
+G2L["1b"]["BackgroundTransparency"] = 1;
+G2L["1b"]["Position"] = UDim2.new(0.041152264922857285, 0, 0.29428571462631226, 0);
+
+-- StarterGui.KroxExecutor.Main.CreditsFrame.Ownerlabel
+G2L["1c"] = Instance.new("TextLabel", G2L["19"]);
+G2L["1c"]["TextWrapped"] = true;
+G2L["1c"]["BorderSizePixel"] = 0;
+G2L["1c"]["TextScaled"] = true;
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c"]["TextSize"] = 14;
+G2L["1c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["Size"] = UDim2.new(0, 200, 0, 29);
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["Text"] = [[Owner: Noremius]];
+G2L["1c"]["Name"] = [[Ownerlabel]];
+G2L["1c"]["BackgroundTransparency"] = 1;
+G2L["1c"]["Position"] = UDim2.new(0.041152264922857285, 0, 0.42000001668930054, 0);
+
+-- StarterGui.KroxExecutor.Main.CreditsFrame.Functionslabel
+G2L["1d"] = Instance.new("TextLabel", G2L["19"]);
+G2L["1d"]["TextWrapped"] = true;
+G2L["1d"]["BorderSizePixel"] = 0;
+G2L["1d"]["TextScaled"] = true;
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1d"]["TextSize"] = 14;
+G2L["1d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["Size"] = UDim2.new(0, 200, 0, 29);
+G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["Text"] = [[Functions: Noremius]];
+G2L["1d"]["Name"] = [[Functionslabel]];
+G2L["1d"]["BackgroundTransparency"] = 1;
+G2L["1d"]["Position"] = UDim2.new(0.041152264922857285, 0, 0.5657142996788025, 0);
+
+-- StarterGui.KroxExecutor.Main.Buttons.ExecutorButton.LocalScript
+local function C_6()
+local script = G2L["6"];
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.ExecutorFrame.Visible = true
+		script.Parent.Parent.Parent.CreditsFrame.Visible = false
+	end)
+	
+end;
+task.spawn(C_6);
+-- StarterGui.KroxExecutor.Main.Buttons.CreditsFrame.LocalScript
+local function C_9()
+local script = G2L["9"];
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.ExecutorFrame.Visible = false
+		script.Parent.Parent.Parent.CreditsFrame.Visible = true
+	end)
+	
+end;
+task.spawn(C_9);
+-- StarterGui.KroxExecutor.Main.ExecutorFrame.ExecuteFromTextbox.LocalScript
+local function C_e()
+local script = G2L["e"];
+	local function notify(title, text, duration)
+		local StarterGui = game:GetService("StarterGui")
+		StarterGui:SetCore("SendNotification",{
+			Title = title,
+			Text = text,
+			Duration = duration
+		})
+	end
+	
+	
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		notify("Krox Executor", "Successfully Executed On Textbox!", 5)
+		
+		loadstring(script.Parent.Parent.Input.Text)()
+	end)
+end;
+task.spawn(C_e);
+-- StarterGui.KroxExecutor.Main.ExecutorFrame.ExecuteFromClipboard.LocalScript
+local function C_12()
+local script = G2L["12"];
+	local function notify(title, text, duration)
+		local StarterGui = game:GetService("StarterGui")
+		StarterGui:SetCore("SendNotification",{
+			Title = title,
+			Text = text,
+			Duration = duration
+		})
+	end
+	
+	
+	
+	
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		notify("Krox Executor", "Successfully Executed On Clipboard!", 5)
+		
+		loadstring(getclipboard())()
+	end)
+end;
+task.spawn(C_12);
+-- StarterGui.KroxExecutor.Main.ExecutorFrame.Clear.LocalScript
+local function C_16()
+local script = G2L["16"];
+	local function notify(title, text, duration)
+		local StarterGui = game:GetService("StarterGui")
+		StarterGui:SetCore("SendNotification",{
+			Title = title,
+			Text = text,
+			Duration = duration
+		})
+	end
+	
+	
+	
+	
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Input.Text = ""
+		
+		notify("Krox Executor", "Successfully Textbox is cleared!", 5)
+	end)
+end;
+task.spawn(C_16);
+-- StarterGui.KroxExecutor.Main.LocalScript
+local function C_18()
+local script = G2L["18"];
+	script.Parent.Active = true
+	script.Parent.Selectable = true
+	script.Parent.Draggable = true
+end;
+task.spawn(C_18);
+
+return G2L["1"], require;
